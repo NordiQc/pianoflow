@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PianoFlow</title>
+<meta name="description" content="PianoFlow helps you learn piano pieces from a MIDI file: the notes fall toward the keyboard and the two hands are split for you. Free, for Windows and Android.">
+<meta name="color-scheme" content="dark light">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230d0e15'/%3E%3Crect x='6' y='7' width='5' height='11' rx='1' fill='%235ccaa2'/%3E%3Crect x='13' y='12' width='5' height='8' rx='1' fill='%23f0a02a'/%3E%3Crect x='20' y='5' width='5' height='9' rx='1' fill='%235ccaa2'/%3E%3Crect x='4' y='22' width='24' height='5' rx='1' fill='%23e6e6ee'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="../style.css">
+<link rel="alternate" hreflang="fr" href="https://nordiqc.github.io/pianoflow/">
+<link rel="alternate" hreflang="en" href="https://nordiqc.github.io/pianoflow/en/">
+<link rel="alternate" hreflang="x-default" href="https://nordiqc.github.io/pianoflow/en/">
+</head>
+<body>
+
+<header class="page">
+  <a class="marque" href="./">PianoFlow</a>
+  <nav aria-label="Page sections">
+    <a href="#features">What it does</a>
+    <a href="#plus">Free and Plus</a>
+    <a href="#download">Download</a>
+    <a href="#questions">Questions</a>
+    <a href="../" hreflang="fr" lang="fr" data-langue="fr" class="langue">Français</a>
+  </nav>
+</header>
+
+<main>
+<section class="accueil page" aria-labelledby="title">
+  <h1 id="title">Learn your piano pieces one hand at a time</h1>
+  <p class="lead">Give PianoFlow a MIDI file. The notes fall toward the keyboard and you play them at your own pace, slowed down or looping the passage that trips you up. The app works out the right hand and the left hand by itself.</p>
+  <div class="actions">
+    <a class="bouton principal" href="#download">Download for free</a>
+    <a class="bouton secondaire" href="#features">See what it does</a>
+  </div>
+  <p class="note-bouton">Beta version, for Windows and Android. The app works offline.</p>
+
+  <figure class="vitrine">
+    <div class="cadre">
+      <img src="../img/jeu.webp" width="1600" height="950" alt="The PianoFlow play screen: green and orange notes fall toward a piano keyboard, with the mode, speed and loop buttons at the top. The interface in this picture is in French.">
+    </div>
+    <figcaption>
+      <span class="legende"><i class="d"></i>Right hand</span>
+      <span class="legende"><i class="g"></i>Left hand</span>
+      <span class="legende"><i class="a"></i>Note the app isn't sure about</span>
+    </figcaption>
+  </figure>
+
+  <svg class="clavier" aria-hidden="true" focusable="false">
+    <defs>
+      <pattern id="octave" patternUnits="userSpaceOnUse" width="70" height="56">
+        <rect width="70" height="56" fill="var(--fond)"/>
+        <g fill="var(--cle)">
+          <rect x="0" width="9" height="56" rx="1.5"/><rect x="10" width="9" height="56" rx="1.5"/><rect x="20" width="9" height="56" rx="1.5"/>
+          <rect x="30" width="9" height="56" rx="1.5"/><rect x="40" width="9" height="56" rx="1.5"/><rect x="50" width="9" height="56" rx="1.5"/><rect x="60" width="9" height="56" rx="1.5"/>
+        </g>
+        <g fill="var(--cle-noire)">
+          <rect x="6.5" width="6" height="34" rx="1"/><rect x="16.5" width="6" height="34" rx="1"/>
+          <rect x="36.5" width="6" height="34" rx="1"/><rect x="46.5" width="6" height="34" rx="1"/><rect x="56.5" width="6" height="34" rx="1"/>
+        </g>
+      </pattern>
+    </defs>
+    <rect width="100%" height="56" fill="url(#octave)"/>
+    <rect x="150" y="34" width="9" height="22" rx="1.5" fill="var(--main-g)"/>
+    <rect x="270" y="34" width="9" height="22" rx="1.5" fill="var(--main-d)"/>
+  </svg>
+</section>
+
+<section id="hands" class="page" aria-labelledby="title-hands">
+  <div class="deux-colonnes">
+    <div>
+      <p class="etiquette">Hand separation</p>
+      <h2 id="title-hands">A messy file is not a problem</h2>
+      <div class="corps">
+        <p>A lot of the MIDI files you find online are live recordings on a single track, with nothing saying which hand plays what. PianoFlow figures it out.</p>
+        <p>The notes it isn't sure about are dashed. Tap a note to move it to the other hand, and the app takes another look at the nearby notes it had doubts about. The ones it was certain of, it leaves alone.</p>
+      </div>
+    </div>
+    <div>
+      <p class="chiffre">95.3<small>%</small></p>
+      <p class="chiffre-texte">of notes land in the right hand, measured on 271 pieces that arrangers had already split by hand.</p>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="page suite" aria-labelledby="title-features">
+  <p class="etiquette">What it does</p>
+  <h2 id="title-features">From the first listen to the recital</h2>
+  <ul class="fonctions">
+    <li>
+      <h3>Four ways to play</h3>
+      <p>Listen, to watch. Melody, where the song waits until you play the right note. Rhythm, where it keeps going without you. Recital, one take at full speed.</p>
+    </li>
+    <li>
+      <h3>Slow down, loop, repeat</h3>
+      <p>Speed from 25 to 200%, a tempo in BPM, and a loop between two points to drill a passage until it sticks. The app can play the other hand while you work on yours.</p>
+    </li>
+    <li>
+      <h3>Plug in your keyboard</h3>
+      <p>A USB MIDI keyboard is detected on its own, and the app switches to Melody mode. On Android, you may need an OTG adapter.</p>
+    </li>
+    <li>
+      <h3>A report after every take</h3>
+      <p>Your wrong notes, where you were early or late, the bars to work on. One button loops you straight onto the weakest spot.</p>
+    </li>
+    <li>
+      <h3>Fix what's off</h3>
+      <p>Move a note to the other hand, shift it, lengthen it, delete it or add one. Undo and redo work everywhere, and everything is saved with the song and in the MIDI export.</p>
+    </li>
+    <li>
+      <h3>Change the key</h3>
+      <p>Go up or down a semitone at a time, pick the easiest key, or play in an easy key while hearing the original with the capo.</p>
+    </li>
+  </ul>
+
+  <div class="apercus">
+    <figure>
+      <div class="cadre"><img src="../img/tonalite.webp" width="1600" height="950" loading="lazy" alt="The PianoFlow piece panel: detected key, transposition, capo, octave per hand, and the settings marked Plus. The interface in this picture is in French."></div>
+      <figcaption class="sous-image">The piece panel: detected key, transposition, capo, octave for each hand.</figcaption>
+    </figure>
+    <figure>
+      <div class="cadre"><img src="../img/telephone.webp" width="1400" height="647" loading="lazy" alt="PianoFlow on a phone held in landscape: the same play screen, with buttons sized for touch."></div>
+      <figcaption class="sous-image">On Android, in landscape, with the same play screen.</figcaption>
+    </figure>
+  </div>
+  <p class="sous-image">The app is in English and French. These pictures show the French interface.</p>
+</section>
+
+<section id="plus" class="plus" aria-labelledby="title-plus">
+  <div class="page">
+    <p class="etiquette">Free and Plus</p>
+    <h2 id="title-plus">Everything you need to learn a piece is free</h2>
+    <div class="corps">
+      <p>Hand separation, corrections, the four play modes, the loop, the report, semitone transposition, the capo and the octave of each hand are all free.</p>
+      <p>PianoFlow Plus is in the works. Nothing is for sale yet. It will add the more advanced tools:</p>
+    </div>
+    <ul class="liste-plus">
+      <li>Major and minor, church modes, relative key, scale degrees and mirror</li>
+      <li>Sections and modulations</li>
+      <li>Sheet music PDF export</li>
+      <li>MIDI export with a Plus transposition or note corrections</li>
+      <li>Full file processing (Windows)</li>
+      <li>Progress chart and automatic tempo increase</li>
+    </ul>
+    <div class="corps apres-liste">
+      <p>You can already try these settings in the app. They are marked "Plus Preview": they play normally, but they aren't saved and you can't export while they're on.</p>
+    </div>
+  </div>
+</section>
+
+<section id="download" class="page" aria-labelledby="title-download">
+  <p class="etiquette">Download</p>
+  <h2 id="title-download">Install PianoFlow</h2>
+  <p class="lead">These buttons always give you the current version. The notes for each version are on the <a href="https://github.com/NordiQc/pianoflow/releases/latest">releases page</a>.</p>
+
+  <div class="telechargements">
+    <div class="plateforme">
+      <h3>Windows</h3>
+      <div class="actions">
+        <a class="bouton principal" href="https://github.com/NordiQc/pianoflow/releases/latest/download/PianoFlow-Windows.msi">.msi installer</a>
+        <a class="bouton secondaire" href="https://github.com/NordiQc/pianoflow/releases/latest/download/PianoFlow-Windows-setup.exe">.exe installer</a>
+      </div>
+      <p>The app isn't signed yet, so Windows will show "Windows protected your PC". That's expected: click <strong>More info</strong>, then <strong>Run anyway</strong>.</p>
+      <p>To check your download, open PowerShell in your Downloads folder and run <code>Get-FileHash .\PianoFlow-Windows.msi</code>. The result must match the .msi line in <a href="https://github.com/NordiQc/pianoflow/releases/latest/download/SHA256SUMS.txt">SHA256SUMS.txt</a>, which also lists the checksums of the .exe installer and the APK.</p>
+    </div>
+    <div class="plateforme">
+      <h3>Android</h3>
+      <div class="actions">
+        <a class="bouton principal" href="https://github.com/NordiQc/pianoflow/releases/latest/download/PianoFlow-Android.apk">Download the APK</a>
+      </div>
+      <ol>
+        <li>Open the file on your phone.</li>
+        <li>Allow installing unknown apps when Android asks. The app doesn't go through Google Play.</li>
+        <li>To update, install the new version over the old one: your songs stay.</li>
+      </ol>
+      <p>Full file processing is on Windows only.</p>
+    </div>
+  </div>
+  <p class="pied-telechargement">PianoFlow is in beta, so some things still snag. A bug, an idea, a file that splits badly? In the app, open Settings then "Give feedback", or <a href="https://github.com/NordiQc/pianoflow/issues">open an issue</a> on GitHub.</p>
+</section>
+
+<section id="privacy" class="page suite" aria-labelledby="title-privacy">
+  <p class="etiquette">Your data</p>
+  <h2 id="title-privacy">Everything stays on your device</h2>
+  <div class="corps">
+    <p>Your MIDI files, settings, corrections and history stay on your device. The app doesn't need a connection and sends nothing. This page uses no analytics and no external fonts; it only remembers the language you picked, in your browser. It is hosted on GitHub Pages.</p>
+  </div>
+</section>
+
+<section id="questions" class="page suite" aria-labelledby="title-questions">
+  <p class="etiquette">Questions</p>
+  <h2 id="title-questions">What people often ask</h2>
+  <div class="questions">
+    <details>
+      <summary>Which files can I open?</summary>
+      <p>MIDI files (.mid). It can be a live recording on a single track, or a file already split into two tracks, one per hand. Add them in "My songs" or drop them on the window. On Windows, you can also import a whole folder.</p>
+    </details>
+    <details>
+      <summary>I've used Synthesia. What's different?</summary>
+      <p>The idea is the same: notes falling toward a keyboard. PianoFlow adds automatic hand separation from a single-track file, a report after every take, and note and hand corrections right in the app.</p>
+    </details>
+    <details>
+      <summary>The sound is out of sync with the picture.</summary>
+      <p>Open Settings, then Display, and adjust "Audio/video sync". Auto suits most devices. Otherwise, try larger values until the sound lands at the right moment.</p>
+    </details>
+    <details>
+      <summary>I want to hear the piece on my keyboard.</summary>
+      <p>Open Settings, then "Sound output", and turn on your keyboard. The "Test" button plays four notes to check. On Windows, close Synthesia first: some MIDI drivers can't be shared between two programs.</p>
+    </details>
+    <details>
+      <summary>A feature is marked "Plus". What does that mean?</summary>
+      <p>PianoFlow Plus is a paid version in the works, not for sale yet. You can try its settings as a preview, but they aren't saved with the song and export stays locked while they're on.</p>
+    </details>
+  </div>
+</section>
+</main>
+
+<footer class="page">
+  <p>The piano sound comes from Alexander Holm's Salamander Grand Piano V3, under the CC BY 3.0 license. Sheet music export uses VexFlow, the Bravura font, jsPDF and svg2pdf.</p>
+  <p>The full list of credits and licenses is in the app: Settings, then "Credits and licenses".</p>
+</footer>
+
+<script>
+document.querySelectorAll('[data-langue]').forEach(function (a) {
+  a.addEventListener('click', function () { try { localStorage.setItem('pf-site-langue', a.dataset.langue); } catch (e) {} });
+});
+</script>
+</body>
+</html>
